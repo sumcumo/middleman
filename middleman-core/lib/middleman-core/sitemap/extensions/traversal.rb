@@ -15,7 +15,7 @@ module Middleman
         # This resource's parent resource
         # @return [Middleman::Sitemap::Resource, nil]
         def parent
-          root = path.sub(/^#{::Regexp.escape(traversal_root)}/, '')
+          root = path
           parts = root.split('/')
 
           tail = parts.pop
